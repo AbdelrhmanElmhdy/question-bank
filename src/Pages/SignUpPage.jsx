@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { TextField, Radio, RadioGroup, FormControlLabel } from '@mui/material';
 import { Box, Button, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import backgroundImage from './background.jpg';
 
 const SignUpPage = () => {
   const [name, setName] = useState('');
@@ -31,11 +32,15 @@ const SignUpPage = () => {
   };
 
   const StyledBox = styled(Box)({
+    position: 'absolute',
+    top: 0, bottom: 0, left: 0, right: 0,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     height: '100vh',
-    background: 'rgb(240, 240, 240)',
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
   });
 
   const StyledForm = styled(Box)({

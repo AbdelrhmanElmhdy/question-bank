@@ -2,7 +2,7 @@ import { AppBar, Toolbar, Button } from '@mui/material';
 
 const Navbar = () => {
   return (
-    <AppBar position="static">
+    <AppBar position="sticky" sx={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}>
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
         <a href="/" style={{ textDecoration: 'none', color: 'white' }}>
           <Button color="inherit">Home</Button>
